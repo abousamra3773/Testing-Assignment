@@ -101,14 +101,15 @@ test("isPalidrome throws if the input is an array", () => {
 });
 
 // throws if null is passed
-test("isPalidrome throws if the input is an array", () => {
+test("isPalidrome throws if the input is null", () => {
     expect(() => isPalindrome(null)).toThrow(TypeError);
 });
 
-//throws if null is passed
+// throws if null is passed
 test("isPalidrome throws if the input is undefined", () => {
     expect(() => isPalindrome(undefined)).toThrow(TypeError);
 });
+
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -131,13 +132,8 @@ test("Works with negative numbers", () => {
 });
 
 // works with a single number
-test("Works with negative numbers", () => {
+test("Works with single numbers", () => {
     expect(findMax([5])).toBe(5);
-});
-
-// throws if not an array
-test("Throws if findMax is not an array", () => {
-    expect(() => findMax("testing")).toThrow(TypeError);
 });
 
 // throws if input is not an array
